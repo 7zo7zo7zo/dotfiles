@@ -8,6 +8,8 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+export PATH=$PATH:$HOME/.local/bin
+
 if [[ "$(tty)" = "/dev/tty1" ]]; then
         pgrep dwm || startx
 fi
