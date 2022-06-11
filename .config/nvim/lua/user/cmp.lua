@@ -17,6 +17,8 @@ cmp.setup {
         select = true,
     },
 
+    ['<C-e>'] = cmp.mapping.abort(),
+
     ['<Tab>'] = function(fallback)
       if not cmp.select_next_item() then
         if vim.bo.buftype ~= 'prompt' and has_words_before() then
