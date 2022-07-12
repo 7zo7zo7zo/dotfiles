@@ -22,7 +22,7 @@ else
 	elif [ $BAT -ge 90 ] ; then
 		printf ''
 	elif [ $BAT -ge 80 ] ; then
-		printf '';
+		printf ''
 	elif [ $BAT -ge 70 ] ; then
 		printf ''
 	elif [ $BAT -ge 60 ] ; then
