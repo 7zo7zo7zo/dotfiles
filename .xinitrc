@@ -1,4 +1,5 @@
 export _JAVA_AWT_WM_NONREPARENTING=1
+export BROWSER=firefox
 xrandr --auto
 xautolock -time 12 -locker "systemctl suspend" -detectsleep &
 picom --experimental-backends --backend glx --xrender-sync-fence --no-fading-openclose &
