@@ -11,7 +11,11 @@ setopt autocd
 stty stop undef
 bindkey -v
 
-#add completion here
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)
 
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
