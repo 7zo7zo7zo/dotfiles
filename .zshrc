@@ -9,7 +9,7 @@ SAVEHIST=1000
 
 setopt autocd
 stty stop undef
-#add bindkey here
+bindkey -v
 
 #add completion here
 
