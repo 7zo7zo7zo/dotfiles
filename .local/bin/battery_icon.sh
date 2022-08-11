@@ -1,7 +1,7 @@
 #!/bin/sh
 
-BAT=$(cat /sys/class/power_supply/BAT0/capacity)
-STAT=$(cat /sys/class/power_supply/BAT0/status)
+BAT=$(cat /sys/class/power_supply/BAT1/capacity)
+STAT=$(cat /sys/class/power_supply/BAT1/status)
 if [ $STAT = 'Charging' ]; then	
 	if [ $BAT -ge 90 ]; then
 		printf ''
