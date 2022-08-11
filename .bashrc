@@ -10,7 +10,7 @@ PS1='[\u@\h \W]\$ '
 
 shopt -s autocd
 stty stop undef
-set -o emacs
+#set -o vi
 
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
