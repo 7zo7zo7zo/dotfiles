@@ -9,7 +9,7 @@ SAVEHIST=1000
 
 setopt autocd
 stty stop undef
-#bindkey -v
+bindkey -e
 
 autoload -U compinit
 zstyle ':completion:*' menu select
