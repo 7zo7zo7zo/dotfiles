@@ -22,3 +22,6 @@ local options = {
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+
+require("nvim-autopairs").setup()
+require("colorizer").setup()
