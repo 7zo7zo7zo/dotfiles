@@ -1,13 +1,13 @@
 #!/bin/sh
 
 if [ $(pactl get-source-mute @DEFAULT_SOURCE@ | awk '/Mute/ { print $2 }') == 'yes' ]; then
-  if [ $(pactl list | grep -c RUNNING) -gt 2 ]; then
-    echo Trying to use! 
-  else 
+  if [ -z $(pactl list short | grep input | grep RUNNING) ]; then
     echo 
+  else 
+    echo Trying to use! 
   fi
-elif [ $(pactl list | grep -c RUNNING) -gt 2 ]; then
-  echo In use! 
-else
+elif [ -z $(pactl list short | grep input | grep RUNNING) ]; then
   echo 
+else
+  echo In use! 
 fi
