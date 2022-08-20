@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $(pacmd list-sinks | awk '/muted/ { print $2 }') == 'no' ]; then
+if [ $(pactl get-sink-mute 0 | awk '/Mute/ { print $2 }') == 'no' ]; then
 	printf '墳'
 else
 	printf '婢'
