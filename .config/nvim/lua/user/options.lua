@@ -1,7 +1,7 @@
 local options = {
 	backup = false,
 	fileencoding = "utf-8",
-  hlsearch = true,
+ 	hlsearch = true,
 	ignorecase = true,
 	mouse = "a",
 	swapfile = false,
@@ -14,14 +14,14 @@ local options = {
 	smartcase = true,
 	smartindent = true,
 	expandtab = true,
-  clipboard = "unnamedplus",
+ 	clipboard = "unnamedplus",
 	-- cursorline = true,
-  -- showmode = false,
+	-- showmode = false,
 }
 
 for k, v in pairs(options) do
-  vim.opt[k] = v
+	vim.opt[k] = v
 end
 
 require("nvim-autopairs").setup()
-require("colorizer").setup()
+-- require("colorizer").setup()
