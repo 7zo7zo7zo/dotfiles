@@ -13,10 +13,10 @@ local options = {
 	showtabline = 2,
 	smartcase = true,
 	smartindent = true,
-	expandtab = true,
  	clipboard = "unnamedplus",
 	-- cursorline = true,
 	-- showmode = false,
+	-- expandtab = true,
 }
 
 for k, v in pairs(options) do
