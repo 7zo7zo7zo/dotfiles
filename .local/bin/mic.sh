@@ -1,13 +1,13 @@
 #!/bin/sh
-
-if [ $(pactl get-source-mute @DEFAULT_SOURCE@ | awk '/Mute/ { print $2 }') == 'yes' ]; then
-  if [ -z $(pactl list short | grep input | grep RUNNING) ]; then
-    echo 
-  else 
-    echo Trying to use! 
+#
+if [ -z $(wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | awk '{print $3}') ]; then
+  if [ -z $(wpctl status | awk '/Video/{p=1}!p' | grep input) ]; then
+		echo 
+  else
+		echo In use! 
   fi
-elif [ -z $(pactl list short | grep input | grep RUNNING) ]; then
-  echo 
+elif [ -z $(wpctl status | awk '/Video/{p=1}!p' | grep input) ]; then
+	echo 
 else
-  echo In use! 
+	echo Trying to use! 
 fi
