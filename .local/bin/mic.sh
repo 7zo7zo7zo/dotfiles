@@ -1,5 +1,5 @@
 #!/bin/sh
-#
+
 if [ -z $(wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | awk '{print $3}') ]; then
   if [ -z $(wpctl status | awk '/Video/{p=1}!p' | grep input) ]; then
 		echo 
