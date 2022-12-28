@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [ $(pactl get-sink-mute @DEFAULT_SINK@ | awk '/Mute/ { print $2 }') == 'no' ]; then
+if [ $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $3}') == '[MUTED]' ]; then
 	printf '墳'
 else
 	printf '婢'
 fi
 printf ' '
-pactl list sinks | awk '$1=="Volume:" {printf $5}'
+wpctl status | awk '/Sink endpoints:/{p=1}!p' | sed -n 's/.*vol: //p' | cut -d' ' -f1 | cut -d'[' -f1 | awk '{printf $1*100"%"}'
