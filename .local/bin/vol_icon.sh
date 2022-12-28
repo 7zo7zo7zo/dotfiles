@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $3}') == '[MUTED]' ]; then
+if [ -z $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $3}') ]; then
 	printf '墳'
 else
 	printf '婢'
