@@ -1,6 +1,6 @@
 export _JAVA_AWT_WM_NONREPARENTING=1
 xrandr --auto
-xautolock -time 10 -locker "systemctl suspend" -detectsleep &
+xautolock -time 12 -locker "systemctl suspend" -detectsleep &
 picom --backend glx --xrender-sync-fence --no-fading-openclose &
 dwmblocks &
 exec dwm
