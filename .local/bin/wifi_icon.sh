@@ -1,9 +1,9 @@
 #!/bin/sh
 
 if [ $(cat /sys/class/net/enp7s0/operstate) == 'up' ]; then
-	printf ''
+	printf '󰈀'
 elif [ $(cat /sys/class/net/wlp8s0/operstate) == 'up' ]; then
-	printf '直'
+	printf '󰖩'
 else
-	printf '睊'
+	printf '󰖪'
 fi
