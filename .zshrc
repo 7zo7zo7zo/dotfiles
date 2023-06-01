@@ -10,7 +10,9 @@ autoload -Uz vcs_info
 
 zstyle ':vcs_info:git:*' formats ' (%b)'
 
-precmd() { vcs_info }
+precmd() {
+	vcs_info
+}
 
 PS1='%F{green}%n@%m%f:%F{cyan}%1~%f%F{yellow}${vcs_info_msg_0_} %f%% '
 
@@ -37,7 +39,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 #export XDG_CONFIG_DIRS=/etc/xdg
 
 export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:$HOME/Android/Sdk/build-tools/30.0.3
+#export PATH=$PATH:$HOME/Android/Sdk/build-tools/30.0.3
 
 export BROWSER=firefox
 export EDITOR=nvim
@@ -55,5 +57,5 @@ alias vmkinit='sudo nvim /etc/mkinitcpio.conf'
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 if [[ "$(tty)" = "/dev/tty1" ]]; then
-        pgrep dwm || startx
+	pgrep dwm || startx
 fi
