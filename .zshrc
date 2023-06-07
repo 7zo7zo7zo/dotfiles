@@ -3,6 +3,7 @@
 alias ls='ls --color=auto'
 
 autoload -U colors && colors
+#PS1="%{$fg[green]%}%n@%m%{$reset_color%}:%{$fg[cyan]%}%1~%{$reset_color%} %% "
 
 setopt prompt_subst
 
