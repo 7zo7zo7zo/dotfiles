@@ -26,9 +26,9 @@ local plugins = {
 	-- Snippets
 	"L3MON4D3/LuaSnip",
 	"rafamadriz/friendly-snippets",
-	"windwp/nvim-autopairs",
 
 	-- Other
+	"windwp/nvim-autopairs",
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	-- "norcalli/nvim-colorizer.lua",
 	-- "uga-rosa/ccc.nvim",
