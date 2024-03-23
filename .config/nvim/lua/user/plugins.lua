@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-
+	
 	-- Autocompletion
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
@@ -30,11 +30,11 @@ local plugins = {
 
 	-- Other
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	-- "norcalli/nvim-colorizer.lua",
+	-- "uga-rosa/ccc.nvim",
 
 	-- Colorschemes
 	"bluz71/vim-moonfly-colors",
-	-- "norcalli/nvim-colorizer.lua",
-	-- "uga-rosa/ccc.nvim",
 }
 
 local opts = {}
