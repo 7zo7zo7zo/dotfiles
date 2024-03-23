@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	
+
 	-- Autocompletion
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
