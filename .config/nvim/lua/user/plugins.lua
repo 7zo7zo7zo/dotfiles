@@ -14,26 +14,27 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 
 	-- Autocompletion
-  "hrsh7th/nvim-cmp",
+	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-buffer",
-  "hrsh7th/cmp-path",
-  "saadparwaiz1/cmp_luasnip",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path",
+	"saadparwaiz1/cmp_luasnip",
 
 	-- LSP Support
-  "neovim/nvim-lspconfig",
+	"neovim/nvim-lspconfig",
 
 	-- Snippets
-  "L3MON4D3/LuaSnip",
-  "rafamadriz/friendly-snippets",
-  "windwp/nvim-autopairs",
+	"L3MON4D3/LuaSnip",
+	"rafamadriz/friendly-snippets",
+	"windwp/nvim-autopairs",
 
 	-- Other
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
 	-- Colorschemes
 	"bluz71/vim-moonfly-colors",
-	-- "norcalli/nvim-colorizer.lua"
+	-- "norcalli/nvim-colorizer.lua",
+	-- "uga-rosa/ccc.nvim",
 }
 
 local opts = {}
