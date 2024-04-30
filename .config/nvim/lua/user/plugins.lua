@@ -27,6 +27,15 @@ local plugins = {
 	"L3MON4D3/LuaSnip",
 	"rafamadriz/friendly-snippets",
 
+	-- LaTeX
+	{
+		"lervag/vimtex",
+		lazy = false,
+		init = function()
+		end
+	}
+	"evesdropper/luasnip-latex-snippets.nvim",
+
 	-- Other
 	"windwp/nvim-autopairs",
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
