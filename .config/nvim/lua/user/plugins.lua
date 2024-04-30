@@ -33,7 +33,7 @@ local plugins = {
 		lazy = false,
 		init = function()
 		end
-	}
+	},
 	"evesdropper/luasnip-latex-snippets.nvim",
 
 	-- Other
